@@ -11,14 +11,14 @@ function addInCartMessage(title, price) {
     message +=' ';
     message +=productPrice;
     message +=' ';
-    message +='теперь в корзине!'
+    message +='теперь в корзине!';
     
 	console.log (message);
 }
 
     // Конец решения задания №1.1.
 
-    return message;
+   return message;
 }
 
 function addInCartCountChange(value) {
@@ -27,7 +27,7 @@ function addInCartCountChange(value) {
     let oldValue = value;
 
     let newValue;
-    newValue=oldValue
+    newValue=oldValue;
 	newValue ++;
 }
     
