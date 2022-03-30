@@ -5,20 +5,20 @@ function addInCartMessage(title, price) {
     // Задание №1.1. Оповещение о добавлении в корзину
 
     let message;
-    message=productName
-    message +=' ';
-    message +='за';
-    message +=' ';
-    message +=productPrice;
-    message +=' ';
-    message +='теперь в корзине!';
+    message = productName
+    message += ' ';
+    message += 'за';
+    message += ' ';
+    message += productPrice;
+    message += ' ';
+    message += 'теперь в корзине!';
     
 	console.log (message);
 }
 
     // Конец решения задания №1.1.
 
-   return message;
+    return message;
 }
 
 function addInCartCountChange(value) {
@@ -27,7 +27,7 @@ function addInCartCountChange(value) {
     let oldValue = value;
 
     let newValue;
-    newValue=oldValue;
+    newValue = oldValue;
 	newValue ++;
 }
     
