@@ -30,11 +30,29 @@
 //           "count": 2
 //         }
 //      ]
-//    }
+//    }:  
 // }
 
 function sendRequest(name, phone, address, goods, sum) {
-    let data = {goods: [], order: {}};
+    let data = `{ 
+	             "data": {
+		                        "client": { "${name} ${phone}",
+								"order":  {
+								  "address": "улица. ${address.street},дом ${address.house}, подъезд ${address.entrance}, этаж ${address.floor}, кв. ${address.flat}",
+								  "sum": ${sum}
+								},
+								"goods":  [
+								  {	
+								          "title": "${title}",
+										  "count": ${count}
+								  }
+						], 
+                                          "cost":
+										  "discount": ${discount},
+										  "delivery": ${delivery}
+					}	
+			}`:
+	}
 
     let countOfGoods = goods.length;
 
@@ -51,3 +69,4 @@ function sendRequest(name, phone, address, goods, sum) {
 
     return jsonData;
 }
+// Конец решения задания №5.1 
